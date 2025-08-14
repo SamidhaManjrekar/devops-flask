@@ -2,12 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-# We'll intentionally change this line differently on two branches later
-GREETING = "Hello from main branch!"
+GREETING = "Hello from merged branches (main + user-auth)!"
 
 @app.route("/")
 def hello():
-    # Just a simple log so you can see requests in the console
     print("Request received at /")
     return GREETING
 
