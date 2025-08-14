@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 # We'll intentionally change this line differently on two branches later
-GREETING = "Hello, World!"
+GREETING = "Hello from main branch!"
 
 @app.route("/")
 def hello():
